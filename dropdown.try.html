@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!----======== CSS ======== -->
+  <link rel="stylesheet" href="dropdown.try.css">
+
+  <!----===== Boxicons CSS ===== -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <!--<title>Dashboard Sidebar Menu</title>-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+
+  <title>Dropdown Try</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="sidebar close">
+      <div class="logo-name">
+        <div class="logo">
+          <i class="fa-brands fa-html5"></i>
+        </div>
+        <div class="name text">
+          <div class="company-name">
+            公益架站
+          </div>
+          <div class="system-name">
+            後台管理系統
+          </div>
+        </div>
+        <!-- 選單按鈕 -->
+        <i class="fa-solid fa-bars menu-icon"></i>
+      </div>
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="nav-links">
+            <li class="menu-item">
+              <div class="icon-link">
+                <a href="#">
+                  <i class="fa-solid fa-house"></i>
+                  <span class="text link-name">Dashboard</span>
+                </a>
+              </div>
+              <ul class="sub-menu blank">
+                <li class="link-name-sub"><a class="text" href="#">Dashboard</a></li>
+              </ul>
+
+            </li>
+            <li class="menu-item">
+              <div class="icon-link">
+                <a href="#">
+                  <i class="fa-solid fa-paste"></i>
+                  <span class="text link-name">Posts</span>
+                </a>
+                <i class="fa-solid fa-chevron-right arrow"></i>
+              </div>
+              <ul class="sub-menu">
+                <li class="link-name-sub"><a class="text" href="#">Posts</a></li>
+                <li><a class="text" href="#">Web Design</a></li>
+                <li><a class="text" href="#">Login Form</a></li>
+                <li><a class="text" href="#">Card Design</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <div class="icon-link">
+                <a href="#">
+                  <i class="fa-solid fa-bell"></i>
+                  <span class="text link-name">Notifications</span>
+                </a>
+                <i class="fa-solid fa-chevron-right arrow"></i>
+              </div>
+              <ul class="sub-menu">
+                <li class="link-name-sub"><a class="text" href="#">Notifications</a></li>
+                <li><a class="text" href="#">Web Design</a></li>
+                <li><a class="text" href="#">Login Form</a></li>
+                <li><a class="text" href="#">Card Design</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item">
+              <div class="icon-link">
+                <a href="#">
+                  <i class="fa-solid fa-house"></i>
+                  <span class="text link-name">Dashboard</span>
+                </a>
+              </div>
+              <ul class="sub-menu blank">
+                <li class="link-name-sub"><a class="text" href="#">Dashboard</a></li>
+              </ul>
+
+            </li>
+            <li class="menu-item">
+              <div class="icon-link">
+                <a href="#">
+                  <i class="fa-solid fa-house"></i>
+                  <span class="text link-name">Dashboard</span>
+                </a>
+              </div>
+              <ul class="sub-menu blank">
+                <li class="link-name-sub"><a class="text" href="#">Dashboard</a></li>
+              </ul>
+
+            </li>
+            <li class="menu-item">
+              <div class="icon-link">
+                <a href="#">
+                  <i class="fa-solid fa-house"></i>
+                  <span class="text link-name">Dashboard</span>
+                </a>
+              </div>
+              <ul class="sub-menu blank">
+                <li class="link-name-sub"><a class="text" href="#">Dashboard</a></li>
+              </ul>
+
+            </li>
+            <li class="menu-item">
+              <div class="icon-link">
+                <a href="#">
+                  <i class="fa-solid fa-house"></i>
+                  <span class="text link-name">Dashboard</span>
+                </a>
+              </div>
+              <ul class="sub-menu blank">
+                <li class="link-name-sub"><a class="text" href="#">Dashboard</a></li>
+              </ul>
+
+            </li>
+            <li class="menu-item">
+              <div class="icon-link">
+                <a href="#">
+                  <i class="fa-solid fa-house"></i>
+                  <span class="text link-name">Dashboard</span>
+                </a>
+              </div>
+              <ul class="sub-menu blank">
+                <li class="link-name-sub"><a class="text" href="#">Dashboard</a></li>
+              </ul>
+
+            </li>
+            <li class="menu-item">
+              <div class="icon-link">
+                <a href="#">
+                  <i class="fa-solid fa-house"></i>
+                  <span class="text link-name">Dashboard</span>
+                </a>
+              </div>
+              <ul class="sub-menu blank">
+                <li class="link-name-sub"><a class="text" href="#">Dashboard</a></li>
+              </ul>
+
+            </li>
+            <li class="menu-item">
+              <div class="icon-link">
+                <a href="#">
+                  <i class="fa-solid fa-house"></i>
+                  <span class="text link-name">Dashboard</span>
+                </a>
+              </div>
+              <ul class="sub-menu blank">
+                <li class="link-name-sub"><a class="text" href="#">Dashboard</a></li>
+              </ul>
+
+            </li>
+            <li class="menu-item">
+              <div class="icon-link">
+                <a href="#">
+                  <i class="fa-solid fa-bell"></i>
+                  <span class="text link-name">Notifications</span>
+                </a>
+                <i class="fa-solid fa-chevron-right arrow"></i>
+              </div>
+              <ul class="sub-menu">
+                <li class="link-name-sub"><a class="text" href="#">Notifications</a></li>
+                <li><a class="text" href="#">Web Design</a></li>
+                <li><a class="text" href="#">Login Form</a></li>
+                <li><a class="text" href="#">Card Design</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <div class="icon-link">
+                <a href="#">
+                  <i class="fa-solid fa-bell"></i>
+                  <span class="text link-name">Notifications</span>
+                </a>
+                <i class="fa-solid fa-chevron-right arrow"></i>
+              </div>
+              <ul class="sub-menu">
+                <li class="link-name-sub"><a class="text" href="#">Notifications</a></li>
+                <li><a class="text" href="#">Web Design</a></li>
+                <li><a class="text" href="#">Login Form</a></li>
+                <li><a class="text" href="#">Card Design</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <div class="icon-link">
+                <a href="#">
+                  <i class="fa-solid fa-bell"></i>
+                  <span class="text link-name">Notifications</span>
+                </a>
+                <i class="fa-solid fa-chevron-right arrow"></i>
+              </div>
+              <ul class="sub-menu">
+                <li class="link-name-sub"><a class="text" href="#">Notifications</a></li>
+                <li><a class="text" href="#">Web Design</a></li>
+                <li><a class="text" href="#">Login Form</a></li>
+                <li><a class="text" href="#">Card Design</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <div class="icon-link">
+                <a href="#">
+                  <i class="fa-solid fa-bell"></i>
+                  <span class="text link-name">Notifications</span>
+                </a>
+                <i class="fa-solid fa-chevron-right arrow"></i>
+              </div>
+              <ul class="sub-menu">
+                <li class="link-name-sub"><a class="text" href="#">Notifications</a></li>
+                <li><a class="text" href="#">Web Design</a></li>
+                <li><a class="text" href="#">Login Form</a></li>
+                <li><a class="text" href="#">Card Design</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <div class="icon-link">
+                <a href="#">
+                  <i class="fa-solid fa-bell"></i>
+                  <span class="text link-name">Notifications</span>
+                </a>
+                <i class="fa-solid fa-chevron-right arrow"></i>
+              </div>
+              <ul class="sub-menu">
+                <li class="link-name-sub"><a class="text" href="#">Notifications</a></li>
+                <li><a class="text" href="#">Web Design</a></li>
+                <li><a class="text" href="#">Login Form</a></li>
+                <li><a class="text" href="#">Card Design</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <div class="icon-link">
+                <a href="#">
+                  <i class="fa-solid fa-bell"></i>
+                  <span class="text link-name">Notifications</span>
+                </a>
+                <i class="fa-solid fa-chevron-right arrow"></i>
+              </div>
+              <ul class="sub-menu">
+                <li class="link-name-sub"><a class="text" href="#">Notifications</a></li>
+                <li><a class="text" href="#">Web Design</a></li>
+                <li><a class="text" href="#">Login Form</a></li>
+                <li><a class="text" href="#">Card Design</a></li>
+              </ul>
+            </li>
+
+            <li class="profile">
+              <div class="profile-details">
+                <div class="img-content">
+                  <img src="image/profile.jpg" alt="profile-image">
+                </div>
+                <div class="name-job">
+                  <div class="profile-name">
+                    Josh Chang
+                  </div>
+                  <div class="job">
+                    前端工程師
+                  </div>
+                </div>
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <section class="home-section">
+      <h1>測試</h1>
+      <h1>測試</h1>    
+    </section>
+  </div>
+  <script>
+    $(function () {
+      $('.menu-icon').click(function () {
+        $('.sidebar').toggleClass('close');
+        $('.show-sub').removeClass('show-sub');
+      });
+
+      $('.arrow').click(function () {
+
+        this_item = $(this).parent().parent(); /* .menu-item */
+
+        /* 若副選單已經打開 */
+        /*  if (this_item.hasClass('show-sub')) {
+           
+           this_item.find('.sub-menu').not('.blank').slideUp(200);
+           this_item.removeClass('show-sub');
+         } else {
+           this_item.find('.sub-menu').not('.blank').slideDown(200);
+           this_item.addClass('show-sub');
+         } */
+        this_item.toggleClass('show-sub');
+
+        /* 將非點選之項目之副選單全部收合，且移除show-sub class */
+        $('li.menu-item').not(this_item).removeClass('show-sub').each(function () {
+          /* $(this).find('.sub-menu').slideUp(200); */
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

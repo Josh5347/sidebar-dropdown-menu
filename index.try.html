@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!----===== Bootstrap 4 ===== -->
+  <link rel="stylesheet" href="bootstrap.css">
+
+  <!----===== Boxicons CSS ===== -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <!----======== CSS ======== -->
+  <link rel="stylesheet" href="style.try.css">
+
+  <!--<title>Dashboard Sidebar Menu</title>-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+  <script src="bootstrap.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <nav class="sidebar close">
+    <header>
+      <div class="image-text">  
+
+        
+        <span class="image">
+          <img src="tesla_logo.png" alt="logo" />
+        </span>
+        <div class="text header-text">
+          <span class="name">健康路浸信會</span>
+          <span class="system">後台管理系統</span>
+        </div>  
+        <i class='bx bx-chevron-right toggle'></i>
+      </div>
+    </header>
+    <div class="menu-bar">
+      <div class="menu">
+        <li class="search-box">
+          <i class='bx bx-search icon'></i>
+          <input type="search" placeholder="Search...">
+        </li>
+        <ul class="menu-links">
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bx-home-alt icon'></i>
+              <span class="text nav-text">系統數據</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <i class='bx bx-bar-chart-alt-2 icon'></i>
+              <span class="text nav-text">收入統計圖表</span>
+            </a>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+              <div class="bg-white py-2 collapse-inner rounded">
+                <!-- <h6 class="collapse-header">Custom Components:</h6> -->
+                <a class="collapse-item" href="#">檢視/修改</a>
+                <a class="collapse-item" href="#">新增帳號</a>
+              </div>
+            </div>     
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bx-bell icon'></i>
+              <span class="text nav-text">訊息通知</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bx-pie-chart-alt icon'></i>
+              <span class="text nav-text">數據分析</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="bottom-content">
+        <ul>
+          <li>
+            <a href="#">
+              <i class='bx bx-log-out icon'></i>
+              <span class="text nav-text">登出</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+  <section class="home">
+    <h1 class="text">Dashboard</h1>
+  </section>
+  <script>
+    $(function(){
+
+      $('.toggle').click(function(){
+        $('.sidebar').toggleClass('close');
+        if( !($(this).hasClass('close')) ){
+          $('li .nav-text').hide().show(200);
+        };
+      });
+
+    });
+  </script>
+</body>
+</html>

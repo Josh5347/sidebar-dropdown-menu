@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!----===== Boxicons CSS ===== -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>Document</title>
+  <style>
+    body {
+      height: 100vh;
+      color: #E4E9F7;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 10px 14px;
+      height: 100%;
+      width: 250px;
+      background: #fff;
+
+    }
+    .sidebar .content{
+      height: 48px;
+      width: 100%;
+      background: blueviolet;
+    }
+    .sidebar .nav-link {
+      height: 50px;
+      margin-top: 5px;
+      background: red;
+    }
+
+    .sidebar .search-box input {
+      width: 100%;
+      height: 100%;
+      outline: none;
+      border: none;
+      border-radius: 6px;
+    }
+
+    .sidebar .menu-bar {
+      height: calc(100% - 48px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="sidebar">
+    <header>
+      <div class="image-text">
+        <div class="content"></div>
+      </div>
+    </header>
+    <div class="menu-bar">
+      <div class="menu">
+        <li class="search-box">
+
+          <i class='bx bx-search icon'></i>
+          <input type="search" placeholder="Search..." />
+
+        </li>
+
+        <ul class="menu-links">
+
+          <li class="nav-link"></li>
+          <li class="nav-link"></li>
+          <li class="nav-link"></li>
+          <li class="nav-link"></li>
+        </ul>
+      </div>
+
+      <div class="bottom-content">
+        <ul class="menu-links">
+
+          <li class="nav-link"></li>
+          <li class="nav-link"></li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+</body>
+
+</html>
